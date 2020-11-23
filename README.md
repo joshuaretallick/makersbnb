@@ -1,7 +1,7 @@
 # makersbnb
 ## Meet the team:
 
-Savanna, Mel, Georgie and Josh
+Savanna, Mel, Georgie and Josh!!!
 
 HEADLINE SPECIFICATIONS
 Any signed-up user can list a new space.
