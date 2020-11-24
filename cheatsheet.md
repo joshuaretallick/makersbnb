@@ -22,3 +22,5 @@ This is your handy guide to working from the repo as a group!
  5. Send pull request to the group chat.
  6. Other team review and discuss. Once happy we can merge!
  7. Once both branches have merged to development branch, use git pull to get all info
+
+#let me add this!!!
