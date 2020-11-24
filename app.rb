@@ -1,5 +1,6 @@
 require 'sinatra/base'
-require_relative './database_connection_setup.rb'
+require_relative './database_connection_setup.rb
+require './lib/user'
 require './lib/property.rb'
 # require 'sinatra-flash'
 
@@ -26,7 +27,6 @@ class Makersbnb < Sinatra::Base
 
   post '/property' do
     Property.create(name: params['name'], description: params['description'], cost: params['cost'])
-
     redirect '/property'
   end
 
