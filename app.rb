@@ -9,7 +9,7 @@ require './lib/property'
 class Makersbnb < Sinatra::Base
 
   enable :sessions
-  register Sinatra::Flash
+#  register Sinatra::Flash
 
   get '/' do
     erb :'signup'
@@ -38,23 +38,15 @@ class Makersbnb < Sinatra::Base
     erb :'sessions/new'
   end
 
-  # post '/sessions' do
-  #   session[:profile_id] = User.authenticate(email: params[:email], password: params[:password])
-  #
-  #   if session[:profile_id]
-  #     @profile = session[:profile_id]
-  #     redirect('/peeps')
-  #   else
-  #     flash[:notice] = 'Please check your email or password.'
-  #     redirect('/sessions/new')
-  #   end
-  #
-  # end
-  #
-  # post '/sessions/destroy' do
-  #   session.clear
-  #   redirect('/')
-  # end
+  post '/sessions' do
+    session[:user_id] = User.authenticate(email: params[:email], password: params[:password])
+    redirect('/property')
+  end
+
+  post '/sessions/destroy' do
+    session.clear
+    redirect('/')
+  end
   #START FROM HERE
 
 
