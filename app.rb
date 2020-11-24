@@ -42,11 +42,11 @@ class Makersbnb < Sinatra::Base
     session[:user_id] = User.authenticate(email: params[:email], password: params[:password])
     redirect('/property')
   end
-  #
-  # post '/sessions/destroy' do
-  #   session.clear
-  #   redirect('/')
-  # end
+
+  post '/sessions/destroy' do
+    session.clear
+    redirect('/')
+  end
   #START FROM HERE
 
 
