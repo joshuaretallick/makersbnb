@@ -12,7 +12,9 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/' do
+    p "Hey whats up?"
     User.create(email: params[:email], password: params[:password])
+    p "Hey Im number 2?"
     redirect '/property'
   end
 

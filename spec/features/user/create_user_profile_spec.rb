@@ -4,6 +4,6 @@ feature 'sign up to Makersbnb' do
     fill_in('email', with: 'test@test.co.uk')
     fill_in('password', with: 'passwordtest')
     click_button('Sign up')
-    expect(page).to have_content('Welcome to Makersbnb')
+    expect(current_path).to eq '/property'
   end
 end
