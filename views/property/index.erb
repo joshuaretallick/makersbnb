@@ -23,9 +23,8 @@
       </tr>
     </tfoot>
   </table>
+  <form action="/property/<%= property.id %>/book" method="get">
+      <input type="submit" value="Request Booking" />
+    </form>
   <% end %>
 </ul>
-
-<form action="/sessions/destroy" method="post">
-  <input type="submit" value="Sign out" />
-</form>
