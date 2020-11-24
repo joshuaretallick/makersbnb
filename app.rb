@@ -1,7 +1,7 @@
 require 'sinatra/base'
-require_relative './database_connection_setup.rb
+require_relative './database_connection_setup.rb'
 require './lib/user'
-require './lib/property.rb'
+require './lib/property'
 # require 'sinatra-flash'
 
 
