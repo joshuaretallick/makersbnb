@@ -1,0 +1,43 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/database_connection_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1606214195
+  }
+}
