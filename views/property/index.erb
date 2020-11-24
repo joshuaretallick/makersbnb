@@ -1,0 +1,27 @@
+<h1>Welcome to Makersbnb</h1>
+
+<form action="/property/new">
+  <input type="submit" value="Add property" />
+</form>
+
+<ul>
+  <% @properties.each do |property| %>
+  <table>
+    <thead>
+      <tr>
+        <td><%= property.name %></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= property.description %></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>£<%= property.cost %></td>
+      </tr>
+    </tfoot>
+  </table>
+  <% end %>
+</ul>
