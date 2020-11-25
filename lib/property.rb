@@ -1,4 +1,5 @@
 require_relative 'database_connection'
+require_relative 'user'
 
 class Property
 

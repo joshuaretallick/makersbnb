@@ -1,3 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <td><%= @property.name %></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @property.description %></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>£<%= @property.cost %></td>
+    </tr>
+  </tfoot>
+</table>
 <form action="/property/confirmed">
     <input type="submit" value="Confirm Booking" />
 </form>
