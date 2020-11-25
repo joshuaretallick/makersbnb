@@ -1,10 +1,12 @@
 require 'property'
+require 'user'
 
 describe Property do
 
   describe ".create" do
     it "allows the user to create a property listing" do
-      new = Property.create(name: "house", description: "small, 3 rooms", cost: 50)
+      user = User.create(email: 'test@test.com', password: 'password')
+      new = Property.create(name: "house", description: "small, 3 rooms", cost: 50, user_id: user.id)
       persisted_data = PG.connect(dbname: 'makersbnb_test').query("SELECT * FROM property WHERE id = #{new.id};")
         expect(new.name).to eq "house"
         expect(new.description).to eq "small, 3 rooms"
@@ -16,9 +18,10 @@ describe Property do
 
   describe '.all' do
     it 'shows all the property listings' do
-      property = Property.create(name: "house", description: "small, 3 rooms", cost: 50)
-      Property.create(name: "castle", description: "big, cold, stoney", cost: 200)
-      Property.create(name: "tent", description: "Intense", cost: 25)
+      user = User.create(email: 'test@test.com', password: 'password')
+      property = Property.create(name: "house", description: "small, 3 rooms", cost: 50, user_id: user.id)
+      Property.create(name: "castle", description: "big, cold, stoney", cost: 200, user_id: user.id)
+      Property.create(name: "tent", description: "Intense", cost: 25, user_id: user.id)
 
       properties = Property.all
 
@@ -32,7 +35,8 @@ describe Property do
 
   describe '.find' do
   it 'returns the requested property object' do
-    property = Property.create(name: "house", description: "small, 3 rooms", cost: 50)
+    user = User.create(email: 'test@test.com', password: 'password')
+    property = Property.create(name: "house", description: "small, 3 rooms", cost: 50, user_id: user.id)
 
     result = Property.find(id: property.id)
 
