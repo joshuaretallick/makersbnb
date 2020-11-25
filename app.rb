@@ -59,10 +59,9 @@ class Makersbnb < Sinatra::Base
     flash[:notice] = 'You have successfully signed out'
     redirect('/')
   end
-  #START FROM HERE
 
   get '/property/:id/book' do
-    # @properties = Property.all
+    @property = Property.find(id: params[:id])
     erb :'property/request_booking'
 # renter - the dates that they want form
 # submit/book button
