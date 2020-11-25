@@ -24,7 +24,6 @@ class Makersbnb < Sinatra::Base
   get '/property' do
      # @user = session[:user_id]
      @user = User.find(id: session[:user_id])
-    p @user
     @properties = Property.all
     erb :'property/index'
   end
