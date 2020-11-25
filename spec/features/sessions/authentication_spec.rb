@@ -16,6 +16,7 @@ feature 'authentication' do
     click_button('Sign in')
     click_button('Sign out')
     expect(current_path).to eq '/'
+    expect(page).to have_content 'You have successfully signed out'
   end
 
 end

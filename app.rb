@@ -2,14 +2,14 @@ require 'sinatra/base'
 require_relative './database_connection_setup.rb'
 require './lib/user'
 require './lib/property'
-# require 'sinatra-flash'
-# require 'uri'
+require 'sinatra/flash'
+require 'uri'
 
 
 class Makersbnb < Sinatra::Base
 
   enable :sessions
-#  register Sinatra::Flash
+  register Sinatra::Flash
 
   get '/' do
     erb :'signup'
@@ -45,6 +45,7 @@ class Makersbnb < Sinatra::Base
 
   post '/sessions/destroy' do
     session.clear
+    flash[:notice] = 'You have successfully signed out'
     redirect('/')
   end
   #START FROM HERE
