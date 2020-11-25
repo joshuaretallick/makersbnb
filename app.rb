@@ -63,7 +63,7 @@ class Makersbnb < Sinatra::Base
     erb :'property/request_booking'
 # renter - the dates that they want form
 # submit/book button
-  redirect 'property/confirmed'
+  # redirect 'property/:id'
   end
 
  #  post '/property/:id' do

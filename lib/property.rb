@@ -24,4 +24,9 @@ class Property
     end
   end
 
+  def self.find(id:)
+    result = DatabaseConnection.query("SELECT * FROM property WHERE id=#{id};")
+    Property.new(id: result[0]['id'], name: result[0]['name'], description: result[0]['description'], cost: result[0]['cost'].to_i)
+  end
+
 end

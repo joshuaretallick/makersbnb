@@ -32,4 +32,18 @@ describe Property do
       expect(properties.first.id).to eq property.id
     end
   end
+
+  describe '.find' do
+  it 'returns the requested property object' do
+    property = Property.create(name: "house", description: "small, 3 rooms", cost: 50)
+
+    result = Property.find(id: property.id)
+
+    expect(result).to be_a Property
+    expect(result.id).to eq property.id
+    expect(result.name).to eq 'house'
+    expect(result.description).to eq 'small, 3 rooms'
+    expect(result.cost).to eq 50
+    end
+  end
 end
