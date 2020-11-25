@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/database_connection_spec.rb": {
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -37,7 +37,7 @@
           null
         ]
       },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/features/all_property_spec.rb": {
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/features/all_property_spec.rb": {
         "lines": [
           1,
           1,
@@ -52,92 +52,7 @@
           null
         ]
       },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/features/booking_property_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/features/create_property_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/features/sessions/authentication_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/features/user/create_user_profile_spec.rb": {
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/features/booking_property_spec.rb": {
         "lines": [
           1,
           1,
@@ -151,7 +66,92 @@
           null
         ]
       },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/unit/property_spec.rb": {
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/features/create_property_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/features/sessions/authentication_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/features/user/create_user_profile_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/unit/property_spec.rb": {
         "lines": [
           1,
           null,
@@ -187,10 +187,24 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/unit/user_spec.rb": {
+      "/Users/georgiehorth/Desktop/Projects/makersbnb/spec/unit/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -232,6 +246,5 @@
         ]
       }
     },
-    "timestamp": 1606313114
   }
 }
