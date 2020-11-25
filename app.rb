@@ -50,7 +50,22 @@ class Makersbnb < Sinatra::Base
   end
   #START FROM HERE
 
+  get '/property/:id/book' do
+    # @properties = Property.all
+    erb :'property/request_booking'
+# renter - the dates that they want form
+# submit/book button
+  redirect 'property/confirmed'
+  end
 
+ #  post '/property/:id' do
+ #   # - update the bookings table
+ #   redirect '/property/confirmed'
+ # end
+
+ get '/property/confirmed' do
+  "Your booking is confirmed!"
+  end
 
 
 
