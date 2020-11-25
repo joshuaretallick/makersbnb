@@ -22,8 +22,9 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/property' do
-    @user = session[:user_id]
-    #@user = User.find(session[:user_id])
+     # @user = session[:user_id]
+     @user = User.find(id: session[:user_id])
+    p @user
     @properties = Property.all
     erb :'property/index'
   end
@@ -42,10 +43,10 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/sessions' do
-    session[:user_id] = User.authenticate(email: params[:email], password: params[:password])
+    user = User.authenticate(email: params[:email], password: params[:password])
 
-    if session[:user_id]
-      @user = session[:user_id]
+    if user
+      session[:user_id] = user.id
       redirect('/property')
     else
       flash[:notice] = 'Please check your email or password.'
