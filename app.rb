@@ -18,10 +18,12 @@ class Makersbnb < Sinatra::Base
   post '/' do
     User.create(email: params[:email], password: params[:password])
     flash[:notice] = 'Account Created'
-    redirect '/'
+    redirect '/sessions/new'
   end
 
   get '/property' do
+    @user = session[:user_id]
+    #@user = User.find(session[:user_id])
     @properties = Property.all
     erb :'property/index'
   end
@@ -43,6 +45,7 @@ class Makersbnb < Sinatra::Base
     session[:user_id] = User.authenticate(email: params[:email], password: params[:password])
 
     if session[:user_id]
+      @user = session[:user_id]
       redirect('/property')
     else
       flash[:notice] = 'Please check your email or password.'
