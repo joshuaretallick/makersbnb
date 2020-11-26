@@ -1,0 +1,23 @@
+body {
+  background-color: #ccdbfd;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  width: 300px;
+}
+
+form p {
+  font-size: 60px;
+}
+
+.signup-button {
+  margin-top 30px;
+}
+
+.signup-button:hover {
+  transform: scale(1.5, 1.5);
+  background-colour: red;
+}
