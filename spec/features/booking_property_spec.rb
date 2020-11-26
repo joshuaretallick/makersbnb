@@ -9,7 +9,7 @@ feature 'user can book a property' do
     click_button('Request Booking')
     click_button('Confirm Booking')
     expect(current_path).to eq '/property/confirmed'
-    expect(page).to have_content 'Your booking is confirmed!'
+    expect(page).to have_content 'You booking has been created'
   end
 
   scenario 'user can see the proeprty they want to book' do

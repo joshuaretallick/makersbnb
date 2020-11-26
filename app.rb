@@ -2,6 +2,7 @@ require 'sinatra/base'
 require_relative './database_connection_setup.rb'
 require './lib/user'
 require './lib/property'
+require './lib/booking'
 require 'sinatra/flash'
 require 'uri'
 
@@ -61,6 +62,7 @@ class Makersbnb < Sinatra::Base
 
   get '/property/:id/book' do
     @property = Property.find(id: params[:id])
+    session[:property_id] = @property.id
     erb :'property/request_booking'
 # renter - the dates that they want form
 # submit/book button
@@ -72,12 +74,10 @@ class Makersbnb < Sinatra::Base
  #   redirect '/property/confirmed'
  # end
 
- get '/property/confirmed' do
-  "Your booking is confirmed!"
-  end
-
-
-
+ post '/property/confirmed' do
+   booking = Booking.create(property_id: session[:property_id], user_id: session[:user_id])
+   "You booking has been created"
+ end
 
 run! if app_file == $0
 end

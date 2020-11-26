@@ -168,6 +168,28 @@
           null
         ]
       },
+      "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/unit/booking_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/joshuaretallick/Projects/Bootcamp/makersbnb/spec/unit/property_spec.rb": {
         "lines": [
           1,
@@ -264,6 +286,6 @@
         ]
       }
     },
-    "timestamp": 1606390434
+    "timestamp": 1606401788
   }
 }
