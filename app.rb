@@ -32,7 +32,7 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/property' do
-    Property.create(name: params['name'], description: params['description'], cost: params['cost'])
+    Property.create(name: params['name'], description: params['description'], cost: params['cost'], user_id: session[:user_id])
     redirect '/property'
   end
 

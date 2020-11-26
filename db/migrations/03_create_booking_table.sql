@@ -1,0 +1,1 @@
+CREATE TABLE booking (id SERIAL PRIMARY KEY, property_id int NOT NULL, user_id int NOT NULL, days VARCHAR(10), status VARCHAR(10), CONSTRAINT fk_property_id FOREIGN KEY (property_id) REFERENCES property (id), CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users (id));
