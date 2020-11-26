@@ -2,6 +2,8 @@ body {
   background-color: #ccdbfd;
   justify-content: center;
   text-align: center;
+  color: #27003D;
+  font-family: Arial, sans-serif;
 }
 
 form {
@@ -15,9 +17,9 @@ form p {
 
 .signup-button {
   margin-top 30px;
+  cursor: pointer;
 }
 
-.signup-button:hover {
-  transform: scale(1.5, 1.5);
-  background-colour: red;
+.login-button {
+  cursor: pointer;
 }

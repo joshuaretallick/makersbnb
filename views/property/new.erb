@@ -1,6 +1,20 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../add_property.css">
+</head>
+<body>
+<h1> Add your property! </h1>
 <form action="/property" method="post">
   <input type="text" name="name" placeholder="Property name"/>
   <input type="text" name="description" placeholder="Description"/>
   <input type="text" name="cost" placeholder="Cost per night"/>
-  <input type="submit" value="Add" />
+  <div>
+  <input type="submit" value="Add" class="add-button" />
+  </div>
 </form>
+
+<form action="/sessions/destroy" method="post">
+  <input type="submit" value="Sign out" class="sign_out_button" />
+</form>
+</body>
+</html>

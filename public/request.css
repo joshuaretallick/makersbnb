@@ -28,48 +28,12 @@ body {
   transform: scale(1.25, 1.25);
 }
 
-.add-button {
-  background-color: #6930C3;
-  border: none;
-  color: white;
-  padding:10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 7px;
-  position:absolute;
-  top:5;
-  left:13;
-  margin-top 30px;
-}
-
-.add-button:hover {
-  transform: scale(1.25, 1.25);
-}
-
-.request-button {
-  background-color: #6930C3;
-  border: none;
-  color: white;
-  padding: 8px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 7px;
-}
-
 table, th, td {
   text-align: center;
 }
 
-table {
-  width: 63%;
+table.behave {
+  width: 75%;
   border-collapse: collapse;
   border: 1px solid black;
   padding: 100px 10px;
@@ -78,21 +42,34 @@ table {
 
 }
 
-table.center {
+.behave {
   margin-left: auto;
   margin-right: auto;
 }
 
-div {
-  padding-top: 5px;
-  padding-bottom: 30px;
+.week-button {
+  background-color: #6930C3;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
 }
 
-form {
-  margin: auto;
-  width: 300px;
+div.property {
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
 
-form p {
-  font-size: 60px;
+div.buttons {
+  padding-top: 10px
+}
+
+div.header {
+  padding-top: 15px
 }

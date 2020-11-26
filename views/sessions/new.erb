@@ -1,8 +1,21 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+<link rel="stylesheet" href="../login.css">
+
+</head>
+<body>
+  <h1> Log in </h1>
 <h2>
   <%= flash[:notice] %>
 </h2>
+
 <form action="/sessions" method="post">
   <input type="email" name="email" placeholder="Email"/>
   <input type="password" name="password" placeholder="Password"/>
-  <input type="submit" value="Sign in" />
+<div class="container">
+  <input type="submit" value="Sign in" class="sign_in_button"/>
 </form>
+</div>
+</body>
+</html>
