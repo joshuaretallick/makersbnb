@@ -3,7 +3,7 @@ require_relative 'user'
 
 class Property
 
-  attr_reader :id, :name, :description, :cost, :user_id
+  attr_reader :id, :name, :description, :cost, :user_id, :christmas_week
 
 
   def initialize(id:, name:, description:, cost:, user_id:)
