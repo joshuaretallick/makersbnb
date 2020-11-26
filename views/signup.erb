@@ -1,9 +1,17 @@
-<h2>
-  <%= flash[:notice] %>
-</h2>
-<form action="/" method="post" >
-  <input type="email" name="email" placeholder="email"/>
-  <input type="password" name="password" placeholder="password"/>
-  <input type="submit" value="Sign up" />
+<html>
+<head>
+  <link rel="stylesheet" href="../signup.css">
+</head>
+<body>
+  <h2> Please sign up! </h2>
+  <h2> <%= flash[:notice] %> </h2>
+<link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
+<form action="/" method="post">
+  <input type="email" name="email" placeholder="email" class="signup-form"/>
+  <input type="password" name="password" placeholder="password" class="signup-form"/>
+  <input type="submit" value="Sign up" class="signup-button"/>
 </form>
+<h3> Already have an account?</h3>
 <a href="/sessions/new">Login</a>
+</body>
+</html>
