@@ -1,0 +1,100 @@
+body {
+  background-color: #ccdbfd;
+  justify-content: center;
+  text-align: center;
+  color: #27003D;
+}
+
+.sign_out_button {
+  position:absolute;
+  top:5;
+  right:13;
+  margin-top 30px;
+}
+
+.sign_out_button {
+  background-color: #6930C3;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.sign_out_button:hover {
+  transform: scale(1.25, 1.25);
+}
+
+.add-button {
+  background-color: #6930C3;
+  border: none;
+  color: white;
+  padding:10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+  position:absolute;
+  top:5;
+  left:13;
+  margin-top 30px;
+}
+
+.add-button:hover {
+  transform: scale(1.25, 1.25);
+}
+
+.request-button {
+  background-color: #6930C3;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+table, th, td {
+  text-align: center;
+}
+
+table {
+  width: 75%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 100px 10px;
+  background-color: #FAA307;
+
+
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+form {
+  margin: auto;
+  width: 300px;
+}
+
+form p {
+  font-size: 60px;
+}
