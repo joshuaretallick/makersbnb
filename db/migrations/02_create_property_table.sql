@@ -5,3 +5,4 @@ ADD CONSTRAINT fk_user
 FOREIGN KEY (user_id)
 REFERENCES users(id)
 ;
+ALTER TABLE property ADD COLUMN available boolean DEFAULT TRUE;
