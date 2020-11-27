@@ -76,7 +76,7 @@ class Makersbnb < Sinatra::Base
 
  post '/property/confirmed' do
    booking = Booking.create(property_id: session[:property_id], user_id: session[:user_id])
-   "You booking has been created"
+   erb :'property/confirm'
  end
 
 run! if app_file == $0
