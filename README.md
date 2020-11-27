@@ -59,13 +59,13 @@ I want to see a list of confirmed bookings
 
 ## Planning
 We used a trello board to plan and show workflow.
-![trello](trello.png)
+![trello](https://user-images.githubusercontent.com/71432715/100462147-b6e1ba00-30c1-11eb-8e46-52477f8dc70d.png)
 
 We also started with CRC cards and entity relationship diagrams and this was edited and evolved throughout the course of the week.
-![diagrams](relationship.png)
+![relationship](https://user-images.githubusercontent.com/71432715/100462128-b34e3300-30c1-11eb-855d-a358201a40f5.png)
 
 We researched the best way to use Git to manage and reduce merge conflicts and we protected the main branch by requiring 2 approvals before merging and no one could push to it directly.
-![git](git.png)
+![git](https://user-images.githubusercontent.com/71432715/100462140-b517f680-30c1-11eb-92a7-a813861fe96a.png)
 
 We mobbed during the initial planning stage and then worked in pairs throughout the week. We managed conflicting team member availability with forward planning to ensure that everyone was able to contribute.
 
@@ -81,6 +81,7 @@ We mobbed during the initial planning stage and then worked in pairs throughout 
 
 We followed the TDD process throughout, running feature and unit tests to determine the code we were going to write.
 
-![rspec](rspec.png)
+![rspec](https://user-images.githubusercontent.com/71432715/100462306-fa3c2880-30c1-11eb-96c1-7e41d39509d7.png)
+
 
 ## The UI
