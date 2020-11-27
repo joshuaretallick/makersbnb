@@ -18,5 +18,3 @@ class Booking
   end
 
 end
-
-#please god, let this gitignore file do what I want it to...
