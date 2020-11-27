@@ -1,0 +1,25 @@
+body {
+  background-color: #ccdbfd;
+  justify-content: center;
+  text-align: center;
+  color: #27003D;
+  font-family: Arial, sans-serif;
+}
+
+
+div {
+  background-color: white;
+  width: 300px;
+  border: 8px solid black;
+  padding: 40px;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  border: 3px solid black;
+  padding: 10px;
+}
