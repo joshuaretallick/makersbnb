@@ -76,5 +76,9 @@ class Makersbnb < Sinatra::Base
     erb :'property/confirm'
   end
 
+ get '/property' do
+   redirect '/property'
+ end
+
 run! if app_file == $0
 end
