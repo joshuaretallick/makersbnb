@@ -6,7 +6,6 @@ feature 'authentication' do
     fill_in(:password, with: 'mario')
     click_button('Sign in')
     expect(current_path).to eq '/property'
-  #  expect(page).to have_content 'Welcome, mario@mario.com'
   end
 
   it 'a user can sign out' do

@@ -22,21 +22,6 @@ class Makersbnb < Sinatra::Base
     redirect '/sessions/new'
   end
 
-  get '/property' do
-    @user = User.find(id: session[:user_id])
-    @properties = Property.all
-    erb :'property/index'
-  end
-
-  get '/property/new' do
-    erb :'property/new'
-  end
-
-  post '/property' do
-    Property.create(name: params['name'], description: params['description'], cost: params['cost'], user_id: session[:user_id])
-    redirect '/property'
-  end
-
   get '/sessions/new' do
     erb :'sessions/new'
   end
@@ -60,29 +45,36 @@ class Makersbnb < Sinatra::Base
     redirect('/')
   end
 
+  get '/property' do
+    @user = User.find(id: session[:user_id])
+    @properties = Property.all
+    erb :'property/index'
+  end
+
+  post '/property' do
+    Property.create(name: params['name'], description: params['description'], cost: params['cost'], user_id: session[:user_id])
+    redirect '/property'
+  end
+
+  get '/property/new' do
+    erb :'property/new'
+  end
+
   get '/property/:id/book' do
     @property = Property.find(id: params[:id])
     session[:property_id] = @property.id
     erb :'property/request_booking'
-# renter - the dates that they want form
-# submit/book button
-  # redirect 'property/:id'
   end
 
- #  post '/property/:id' do
- #   # - update the bookings table
- #   redirect '/property/confirmed'
- # end
+  post '/property/confirm' do
+    booking = Booking.create(property_id: session[:property_id], user_id: session[:user_id])
+    availability = Property.availability(id: session[:property_id])
+    redirect 'property/confirm'
+  end
 
- post '/property/confirm' do
-   booking = Booking.create(property_id: session[:property_id], user_id: session[:user_id])
-   availability = Property.availability(id: session[:property_id])
-   redirect 'property/confirm'
- end
-
- get '/property/confirm' do
-   erb :'property/confirm'
- end
+  get '/property/confirm' do
+    erb :'property/confirm'
+  end
 
 run! if app_file == $0
 end
