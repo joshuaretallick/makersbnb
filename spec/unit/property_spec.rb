@@ -47,4 +47,17 @@ describe Property do
     expect(result.cost).to eq 50
     end
   end
+
+  describe '.availability' do
+  it 'changes the availabiltiy from true to false when booking created' do
+    host_user = User.create(email: 'test@test.com', password: 'password')
+    renter = User.create(email: 'test2@test.com', password: 'password')
+    property = Property.create(name: "house", description: "small, 3 rooms", cost: 50, user_id: host_user.id)
+    result = Property.availability(id: property.id)
+    expect(result.christmas_week).to eq "f"
+    end
+  end
+
+
+
 end
