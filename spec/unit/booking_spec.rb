@@ -12,6 +12,7 @@ describe Booking do
       persisted_data = PG.connect(dbname: 'makersbnb_test').query("SELECT * FROM booking WHERE id = #{booking.id};")
       expect(booking).to be_a Booking
       expect(booking.id).to eq persisted_data.first['id']
+      # expect(property.christmas_week).to eq "f"
     end
   end
 
