@@ -1,20 +1,25 @@
+</br>
+</br>
 <img src = https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_airbnb-512.png style="width:250px;height:250px;"/>
+</br>
+</br>
+</br>
 <html>
 <head>
   <link rel="stylesheet" href="../signup.css">
 </head>
 <body>
-  <h2> Please sign up! </h2>
   <h2> <%= flash[:notice] %> </h2>
 <link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">
 <form action="/" method="post">
   <input type="email" name="email" placeholder="email" class="signup-form"/>
   <input type="password" name="password" placeholder="password" class="signup-form"/>
   <div>
+    </br>
   <input type="submit" value="Sign up" class="sign-up-button"/>
   </div>
 </form>
-<h3> Already have an account?</h3>
+<h5> Already have an account?</h5>
 <form action="/sessions/new">
   <input type="submit" value="Log in" class="login-button"/>
 </form>
