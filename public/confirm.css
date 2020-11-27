@@ -23,3 +23,25 @@ div {
   border: 3px solid black;
   padding: 10px;
 }
+
+.sign_out_button {
+  background-color: #017cff;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+  position:absolute;
+  top:5;
+  right:13;
+  margin-top 30px;
+}
+
+.sign_out_button:hover {
+  transform: scale(1.25, 1.25);
+}

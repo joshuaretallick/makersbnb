@@ -74,14 +74,14 @@ class Makersbnb < Sinatra::Base
  #   redirect '/property/confirmed'
  # end
 
- post '/property/confirmed' do
+ post '/property/confirm' do
    booking = Booking.create(property_id: session[:property_id], user_id: session[:user_id])
    availability = Property.availability(id: session[:property_id])
-   redirect 'property/confirmed'
+   redirect 'property/confirm'
  end
-  
- get '/property/confirmed' do
-   erb :'property/confirm' 
+
+ get '/property/confirm' do
+   erb :'property/confirm'
  end
 
 run! if app_file == $0
