@@ -1,0 +1,30 @@
+body {
+  background-color: #ccdbfd;
+  justify-content: center;
+  text-align: center;
+  color: #27003D;
+  font-family: Arial, sans-serif;
+}
+form {
+  margin: auto;
+  width: 300px;
+  padding-top: 50px;
+}
+
+form p {
+  font-size: 60px;
+}
+
+.sign_in_button {
+  background-color: #6930C3;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 7px;
+}

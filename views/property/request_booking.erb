@@ -1,4 +1,13 @@
-<table>
+<html>
+<head>
+<link rel="stylesheet" href="../../request.css">
+</head>
+<body>
+  <div class="header">
+  <h1> Book your get away! </h1>
+  </div>
+<div class="property">
+<table class="behave">
   <thead>
     <tr>
       <td><%= @property.name %></td>
@@ -15,10 +24,20 @@
     </tr>
   </tfoot>
 </table>
+</div>
 
+<h3> Request your holiday week </h3>
 
+  <div class="buttons">
     <form action="/property/confirmed" method="post">
-    <input type="submit" value="Christmas Week" />
-    <input type="submit" value="Thanksgiving Week" />
-    <input type="submit" value="Easter Week" />
+    <input type="submit" value="Christmas Week" class="week-button" />
+    <input type="submit" value="Thanksgiving Week" class="week-button"/>
+    <input type="submit" value="Easter Week" class="week-button" />
     </form>
+  </div>
+
+    <form action="/sessions/destroy" method="post">
+      <input type="submit" value="Sign out" class="sign_out_button" />
+    </form>
+</body>
+</html>
