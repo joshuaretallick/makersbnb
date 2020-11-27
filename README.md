@@ -1,20 +1,17 @@
 # makersbnb
 ## Meet the team:
 
-Savanna, Mel, Georgie and Josh!!!
+[Savanna](https://github.com/savannaelbey), [Mel](https://github.com/TamMelPer) [Georgie](https://github.com/horthbynorthwest) and [Josh](https://github.com/joshuaretallick)
 
-HEADLINE SPECIFICATIONS
-Any signed-up user can list a new space.
-Users can list multiple spaces.
-Users should be able to name their space, provide a short description of the space, and a price per night.
-Users should be able to offer a range of dates where their space is available.
-Any signed-up user can request to hire any space for one night, and this should be approved by the user that owns that space.
-Nights for which a space has already been booked should not be available for users to book that space.
-Until a user has confirmed a booking request, that space can still be booked for that night.
+## Project Goals
+-   Break down projects into tasks and allocate them to pairs
+-   Build to a specification (rather than challenges)
+-   Run stand-ups and retrospectives
+-   Use a branch/PR/merge git workflow
+-   Give and receive meaningful code review
 
 
-```
-USER STORIES
+## User Stories
 
 As a User (Customer / Landlord)
 So that I can use Makersbnb
@@ -60,5 +57,30 @@ As a User (Customer)
 So I can plan my holiday
 I want to see a list of confirmed bookings
 
-```
-### Hey is this working?
+## Planning
+We used a trello board to plan and show workflow.
+![trello](trello.png)
+
+We also started with CRC cards and entity relationship diagrams and this was edited and evolved throughout the course of the week.
+![diagrams](relationship.png)
+
+We researched the best way to use Git to manage and reduce merge conflicts and we protected the main branch by requiring 2 approvals before merging and no one could push to it directly.
+![git](git.png)
+
+We mobbed during the initial planning stage and then worked in pairs throughout the week. We managed conflicting team member availability with forward planning to ensure that everyone was able to contribute.
+
+## To run locally:
+
+1. Clone this repository and bundle install.
+2. Create the database by connecting to `psql`and enter the commands in the db/migrations folder.
+3. Run tests with `rspec`
+4. Run `rackup` and then open browser to http://localhost:9292/
+
+
+## Testing
+
+We followed the TDD process throughout, running feature and unit tests to determine the code we were going to write.
+
+![rspec](rspec.png)
+
+## The UI
